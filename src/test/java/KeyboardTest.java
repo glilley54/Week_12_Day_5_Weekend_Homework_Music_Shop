@@ -17,5 +17,12 @@ public class KeyboardTest {
         assertEquals("black", keyboard.getColour());
 
     }
-
+    @Test
+    public void makesSound(){
+        assertEquals("I'm a Keyboard playing!", keyboard.makeSound());
+    }
+    @Test
+    public void hasSize(){
+        assertEquals("Large", keyboard.getSize());
+    }
 }
