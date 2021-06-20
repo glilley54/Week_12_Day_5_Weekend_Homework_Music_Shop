@@ -26,7 +26,11 @@ public class GuitarTest {
 
     @Test
     public void guitarCanPlay() {
-        assertEquals("I'm a guitar and I'm playing", guitar.makeSound());
+        assertEquals("I'm a guitar and I'm playing!", guitar.makeSound());
+    }
+    @Test
+    public void hasStrings() {
+        assertEquals(6,guitar.getNoOfStrings());
     }
 
 }

@@ -9,8 +9,14 @@ public class Guitar extends Instrument {
         this.noOfStrings = noOfStrings;
     }
 
+    public int getNoOfStrings() {
+        return noOfStrings;
+    }
+
     @Override
     public String makeSound() {
-        return "I'm a guitar and I am playing!";
+        return "I'm a guitar and I'm playing!";
+
+
     }
 }
