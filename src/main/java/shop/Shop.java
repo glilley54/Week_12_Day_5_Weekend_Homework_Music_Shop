@@ -32,5 +32,10 @@ public class Shop implements ISell{
         return this.stock.size();
 
     }
+
+    public void removeStock(ShopItems shopItems) {
+        this.stock.remove(shopItems);
+
+    }
 }
 

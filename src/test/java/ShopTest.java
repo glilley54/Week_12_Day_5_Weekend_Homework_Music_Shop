@@ -32,4 +32,10 @@ public class ShopTest {
         assertEquals(1,shop.getStockCount());
 
     }
+    @Test
+    public void canRemoveStockItem(){
+        shop.addStock(shopItems);
+        shop.removeStock(shopItems);
+        assertEquals(0,shop.getStockCount());
+    }
 }
