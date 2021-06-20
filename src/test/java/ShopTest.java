@@ -2,16 +2,20 @@ import org.junit.Before;
 import org.junit.Test;
 import shop.ShopItems;
 import shop.Shop;
+import shop.ISell;
+
+import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
 public class ShopTest {
-    ShopItems shopitem;
-    shop Shop;
+    ShopItems shopItems;
+    Shop shop;
 
     @Before
     public void before(){
-        shopitem = new ShopItems("Guitar",100,300);
+       shopItems = new ShopItems("Guitar",100,300);
+
 
 
 
@@ -19,12 +23,13 @@ public class ShopTest {
 
     @Test
     public void ItemHasDescription(){
-        assertEquals("Guitar",shopitem.getDescription());
+        assertEquals("Guitar",shopItems.getDescription());
     }
+
     @Test
     public void canAddItemToStock(){
-        shop.addToStock(shopitem);
-        assertEquals(1,shop.getStockCount);
+        shop.addStock(shopItems);
+        assertEquals(1,shop.getStockCount());
 
     }
 }
