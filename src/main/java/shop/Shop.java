@@ -5,13 +5,10 @@ import java.util.ArrayList;
 public class Shop implements ISell{
     private ArrayList<ISell> stock;
 
-    public Shop(ArrayList<ISell> stock) {
-        this.stock = stock;
-    }
-
     public Shop() {
-
+        this.stock = new ArrayList();
     }
+
 
     public ArrayList<ISell> getStock() {
         return stock;

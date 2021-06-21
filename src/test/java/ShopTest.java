@@ -15,6 +15,7 @@ public class ShopTest {
     @Before
     public void before(){
        shopItems = new ShopItems("Guitar",100,300);
+       shop = new Shop();
 
 
 
